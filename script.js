@@ -1,5 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbxKuREKRfRFw7QEFO2f50_Qm-4ef7Wu3FPNDKBBznTS78Px3ybkbKqdNeAV3FhL-l-apg/exec"; // thay bằng URL chị deploy
-
+const API_URL = "https://script.google.com/macros/s/AKfycbzXVEG6mib3SAcxesu3ibSWxgHjFg4YSUP69CZ6268FNRwHJ6mhBYc9ryS3mqbWTN6Xew/exec
 const sets = [
   {
     name: "Spring Set",
