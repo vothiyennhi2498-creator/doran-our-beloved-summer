@@ -1,4 +1,4 @@
-const API_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL"; // thay bằng URL chị deploy
+const API_URL = "https://script.google.com/macros/s/AKfycbxKuREKRfRFw7QEFO2f50_Qm-4ef7Wu3FPNDKBBznTS78Px3ybkbKqdNeAV3FhL-l-apg/exec"; // thay bằng URL chị deploy
 
 const sets = [
   {
