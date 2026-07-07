@@ -1,0 +1,114 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  padding: 40px;
+  background: linear-gradient(135deg, #DDF3E4, #F8D7E3);
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.game {
+  margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #A7D7B5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #90c9a3;
+}
+
+.gift-box {
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  background: #ffe8ef;
+  border: 3px solid #a7d7b5;
+  border-radius: 12px;
+  display: none;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.card {
+  margin: 20px auto;
+  width: 320px;
+  padding: 20px;
+  border-radius: 12px;
+  display: none;
+  text-align: left;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.spring { background: #DDF3E4; }
+.autumn { background: #F8D7E3; }
+.winter { background: #EEF7F3; }
+.summer { background: linear-gradient(135deg, #FFE8EF, #A7D7B5); }
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.item img {
+  width: 32px;
+  height: 32px;
+}
+
+.item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes drop {
+  0% { opacity: 0; transform: translateY(-80px) rotate(-10deg); }
+  50% { opacity: 1; transform: translateY(10px) rotate(5deg); }
+  100% { opacity: 1; transform: translateY(0) rotate(0deg); }
+}
+
+.item.animate {
+  animation: drop 0.8s ease forwards;
+}
